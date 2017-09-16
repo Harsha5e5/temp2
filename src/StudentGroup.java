@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class StudentGroup implements GroupOperationService {
+public class StudentGroup  {
 
 	private Student[] students;
 	
@@ -156,7 +156,7 @@ this.getStudents()[index] = student;
 		       if(s.getBirthDate().before(date))
 				   temp1.add(s);
 		   }
-		//   return  temp.toArray(new Student[temp.size()]); 
+		   return  temp1.toArray(new Student[temp1.size()]); 
 	}
 
 	////@Override
